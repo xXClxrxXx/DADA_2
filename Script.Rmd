@@ -71,6 +71,9 @@ dadaFs <- dada(filtFs, err=errF, multithread=TRUE)
 ```{r}
 dadaRs <- dada(filtRs, err=errR, multithread=TRUE)
 ```
+```{r}
+dadaFs[[1]]
+```
 
 
 
