@@ -68,6 +68,9 @@ plotErrors(errF, nominalQ=TRUE)
 ```{r}
 dadaFs <- dada(filtFs, err=errF, multithread=TRUE)
 ```
+```{r}
+dadaRs <- dada(filtRs, err=errR, multithread=TRUE)
+```
 
 
 
