@@ -132,6 +132,38 @@ mock.ref <- getSequences(file.path(path, "HMP_MOCK.v35.fasta"))
 match.ref <- sum(sapply(names(unqs.mock), function(x) any(grepl(x, mock.ref))))
 cat("Of those,", sum(match.ref), "were exact matches to the expected reference sequences.\n")
 ```
+```{bash}
+source('http://bioconductor.org/biocLite.R')
+biocLite('phyloseq')
+```
+
+```{r}
+packageVersion('phyloseq')
+```
+```{bash}
+source("https://raw.githubusercontent.com/joey711/phyloseq/master/inst/scripts/installer.R",
+       local = TRUE)
+
+
+```
+```{r}
+packageVersion('phyloseq')
+
+```
+```{r}
+source("http://bioconductor.org/biocLite.R")
+biocLite("multtest", type="source")
+```
+```{bash}
+source("http://bioconductor.org/biocLite.R")
+biocLite("multtest", type="source")
+```
+```{r}
+install.packages("ggplot2", type="source")
+```
+```{r}
+library(phyloseq); packageVersion("phyloseq")
+```
 
 
 
