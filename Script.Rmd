@@ -103,6 +103,9 @@ colnames(track) <- c("input", "filtered", "denoisedF", "denoisedR", "merged", "n
 rownames(track) <- sample.names
 head(track)
 ```
+```{bash}
+wget https://zenodo.org/records/4587955/files/silva_nr99_v138.1_train_set.fa.gz?download=1
+```
 
 
 
