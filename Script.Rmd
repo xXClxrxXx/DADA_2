@@ -7,7 +7,10 @@ library(dada2); packageVersion("dada2")
 ```
 
 ```{bash}
-wget https://mothur.s3.us-east-2.amazonaws.com/wiki/miseqsopdata.zip unzip miseqsopdata.zip
+unzip miseqsopdata.zip
 ```
+
+
+
 
 
