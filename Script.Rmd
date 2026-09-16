@@ -7,9 +7,17 @@ library(dada2); packageVersion("dada2")
 ```
 
 ```{bash}
+```
+
+
+```{bash}
 unzip miseqsopdata.zip
 ```
 
+```{r}
+path <- "/home/rstudio/DADA_2/MiSeq_SOP" # CHANGE ME to the directory containing the fastq files after unzipping.
+list.files(path)
+```
 
 
 
