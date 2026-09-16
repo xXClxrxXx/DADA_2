@@ -53,6 +53,9 @@ head(out)
 ```{r}
 errF <- learnErrors(filtFs, multithread=TRUE)
 ```
+```{r}
+errR <- learnErrors(filtRs, multithread=TRUE)
+```
 
 
 
