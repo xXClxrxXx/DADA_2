@@ -106,6 +106,9 @@ head(track)
 ```{bash}
 wget https://zenodo.org/records/4587955/files/silva_nr99_v138.1_train_set.fa.gz?download=1
 ```
+```{bash}
+wget https://zenodo.org/records/4587955/files/silva_species_assignment_v138.1.fa.gz?download=1
+```
 
 
 
