@@ -207,7 +207,14 @@ day <- as.integer(sapply(strsplit(samples.out, "D"), `[`, 2))
 samdf <- data.frame(Subject=subject, Gender=gender, Day=day)
 samdf$When <- "Early"
 samdf$When[samdf$Day>100] <- "Late"
-rownames(samdf) <- samples.out
+```
+
+
+```{r}
+ps <- phyloseq(otu_table(seqtab.nochim, taxa_are_rows=FALSE),
+               sample_data(samdf),
+               tax_table(taxa))
+ps <- prune_samples(sample_names(ps) != "Mock", ps) # Remove mock sample
 ```
 
 
