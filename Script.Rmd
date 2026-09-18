@@ -188,6 +188,9 @@ BiocManager::install("phyloseq", update = FALSE)
 ```{r}
 library(phyloseq); packageVersion("phyloseq")
 ```
+```{r}
+library(Biostrings); packageVersion("Biostrings")
+```
 
 
 
