@@ -194,6 +194,9 @@ library(Biostrings); packageVersion("Biostrings")
 ```{r}
 library(ggplot2); packageVersion("ggplot2")
 ```
+```{r}
+theme_set(theme_bw())
+```
 
 
 
