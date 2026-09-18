@@ -185,6 +185,9 @@ BiocManager::install("phyloseq")
 install.packages("igraph", type = "source")
 BiocManager::install("phyloseq", update = FALSE)
 ```
+```{r}
+library(phyloseq); packageVersion("phyloseq")
+```
 
 
 
