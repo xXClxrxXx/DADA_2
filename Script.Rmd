@@ -214,8 +214,19 @@ samdf$When[samdf$Day>100] <- "Late"
 ps <- phyloseq(otu_table(seqtab.nochim, taxa_are_rows=FALSE),
                sample_data(samdf),
                tax_table(taxa))
+```
+
+
+```{r}
 ps <- prune_samples(sample_names(ps) != "Mock", ps) # Remove mock sample
 ```
 
 
+```{r}
+dna <- Biostrings::DNAStringSet(taxa_names(ps))
+names(dna) <- taxa_names(ps)
+ps <- merge_phyloseq(ps, dna)
+taxa_names(ps) <- paste0("ASV", seq(ntaxa(ps)))
+ps
+```
 
